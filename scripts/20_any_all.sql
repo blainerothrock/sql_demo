@@ -10,8 +10,7 @@
 --
 SELECT id
 FROM data_allegation
-WHERE id = ALL
-(
+WHERE id = ALL (
     SELECT allegation_id
     FROM data_officerallegation
     WHERE final_finding = 'NU'
