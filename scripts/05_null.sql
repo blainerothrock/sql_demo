@@ -1,3 +1,3 @@
 SELECT COUNT(*)
 FROM data_award
-WHERE ceremony_date IS NULL
+WHERE ceremony_date IS NULL;
