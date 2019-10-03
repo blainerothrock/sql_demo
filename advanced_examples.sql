@@ -100,7 +100,7 @@ ORDER BY
 
 -----  The officer first name last name has a salary of X and was hired on date Y
 
-select 'officer ' || x.first_name || ' '|| x.last_name || ' has a salary of '|| cast(s.salary as money) || ' and was hired on ' ||  TO_CHAR(
+select 'officer ' || x.first_name || ' '|| x.last_name || ' has a salary of '|| s.salary  || ' and was hired on ' ||  TO_CHAR(
         s.org_hire_date,
         'MON DD YYYY')   from data_officer x, data_salary s
 where s.officer_id = x.id
